@@ -1,0 +1,17 @@
+@mixin hnpx($n)
+    .h#{$n}px
+        height: #{$n}px
+@mixin wnpx($n)
+    .w#{$n}px
+        width: #{$n}px
+@mixin fz()
+    $fz-list: 12, 14, 16, 18, 20, 22, 24, 26, 28, 30
+    @each $value in $fz-list
+        .fz-#{$value}
+            font-size: #{$value}px
+@mixin bgc($name, $color)
+    .#{$name}
+        background-color: $color
+@mixin color($name, $color)
+    .#{$name}
+        color: $color

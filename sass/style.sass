@@ -1,0 +1,106 @@
+@import _mixin
+@include fz()
+@include hnpx(70)
+@include hnpx(320)
+@include hnpx(650)
+@include wnpx(40)
+@include wnpx(290)
+@include wnpx(500)
+.banner-title
+    position: absolute
+    bottom: 5%
+    left: 10%
+.slide-btns
+    position: absolute
+    bottom: -15%
+.carousel-indicators [data-bs-target]
+    height: 10px
+    background-color: #0000003D
+    border: none
+    border-radius: 5px
+    margin-right: 8px
+    margin-left: 8px
+    transition: all .3s ease
+.carousel-indicators
+    .slide-btn.active
+        width: 200px
+        background-color: #000000AD
+.control-btn
+    width: 50px
+    height: 50px
+    border-radius: 5px
+    background-color: #000
+    top: 45%
+    opacity: 0
+.control-btn
+    &:hover
+        opacity: 1
+.carousel-control-prev
+    left: unset
+    right: 80px
+.login
+    position: absolute
+    z-index: 1
+    top: 3%
+    right: 3%
+    width: 55px
+    height: 24px
+    padding: 8px 12px
+    font-size: 14px
+    border-radius: 5px
+    color: #0DCAF0
+    transition: all .3s ease
+.login
+    &:hover
+        background-color: #0DCAF0
+        color: #fff
+.logo
+    position: absolute
+    top: 3%
+    left: 10px
+    z-index: 1
+.nav-list
+    background-color: #e5e5e586
+    margin-top: 260px
+.nav-text
+    opacity: 0
+.nav-icon
+    transition: all .3s ease
+.nav-icon
+    &:hover
+        background-color: #fff
+        .nav-text
+            opacity: 1
+.news
+    margin-top: 80px
+    margin-left: 80px
+.tag-box
+    height: 22px
+    background-color: #50505050
+    text-align: center
+    padding: 5px
+    transition: all .3s ease
+.tag-box
+    &:hover
+        transform: scale(1.2)
+.fa-tag
+    color: #50505050
+    transition: all .3s ease
+.fa-tag
+    &:hover
+        color: #505050e2
+.card-title
+    display: -webkit-box
+    -webkit-line-clamp: 2
+    -webkit-box-orient: vertical
+    overflow: hidden
+.fa-bookmark
+    transition: all .3s ease
+.fa-bookmark
+    &:hover
+        transform: scale(1.5)
+.news-img
+    transition: all .3s ease
+.news-img
+    &:hover
+        transform: scale(1.2)
